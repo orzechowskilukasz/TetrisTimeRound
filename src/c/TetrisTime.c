@@ -1,3 +1,13 @@
+//layout
+
+#if defined(PBL_PLATFORM_GABBRO)  // Time Round 2 
+   #define X_TIME_OFFSET 7
+#endif
+
+#if defined(PBL_PLATFORM_CHALK)  // Time Round 
+   #define X_TIME_OFFSET 3
+#endif
+
 #include <pebble.h>
 #include "assert.h"
 #include "digit.h"

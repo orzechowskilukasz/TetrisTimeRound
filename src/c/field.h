@@ -1,9 +1,21 @@
-#define FIELD_WIDTH 52
-#define FIELD_HEIGHT 52
-#define FIELD_CELL_SIZE 3
-#define FIELD_CELL_SPACING 2
-#define FIELD_OFFSET_X 1
-#define FIELD_OFFSET_Y 1
+#if defined(PBL_PLATFORM_GABBRO)  // Time Round 2 
+   #define FIELD_WIDTH 52
+   #define FIELD_HEIGHT 52
+   #define FIELD_CELL_SIZE 3
+   #define FIELD_CELL_SPACING 2
+   #define FIELD_OFFSET_X -2
+   #define FIELD_OFFSET_Y 1
+#endif
+
+
+#if defined(PBL_PLATFORM_CHALK)  // Time Round 
+   #define FIELD_WIDTH 45
+   #define FIELD_HEIGHT 45
+   #define FIELD_CELL_SIZE 3
+   #define FIELD_CELL_SPACING 1
+   #define FIELD_OFFSET_X 1
+   #define FIELD_OFFSET_Y 0
+#endif
 
 static bool s_field_inited;
 static GColor s_field_bg_color;
